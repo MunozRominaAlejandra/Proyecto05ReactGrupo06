@@ -1,15 +1,25 @@
-import {Container} from 'react-bootstrap/Container';
-import AboutUs from './assets/Pages/AboutUs';
-import {Routes, Route} from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './assets/Pages/Layout';
 import Home from './assets/Pages/Home';
 import Game from './assets/Pages/Games';
+import AboutUs from './assets/Pages/AboutUs';
 import Error from './assets/Pages/Error';
-import Layout from './assets/Components/Layout';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return(
-    <div>
-    </div>
-  )
+  return (
+    <Container>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='games' element={<Game />} />
+          <Route path='aboutus' element={<AboutUs />} />
+          <Route path='*' element={<Error />} />
+        </Route>
+      </Routes>
+    </Container>
+  );
 }
+
+export default App;
