@@ -6,6 +6,7 @@ import Home from './assets/Pages/Home';
 import Game from './assets/Pages/Games';
 import AboutUs from './assets/Pages/AboutUs';
 import Error from './assets/Pages/Error';
+import JuegoEstrella from './assets/Components/JuegoEstrella.jsx';
 
 function App() {
   return (
