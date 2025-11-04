@@ -9,7 +9,8 @@ function Games () {
     const ejecutarSonido = () => {
 
      const audio = new Audio(sonido);
-     audio.play()};
+     audio.play()
+     };
     
     const manejarClickImagen = () => {
         ejecutarSonido();
