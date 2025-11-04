@@ -1,8 +1,8 @@
-import logo from '../img/logo.png';
+//import logo from '../img/logo.png';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import sonido from '../sounds/sonido.mp3';
-import FormJuegos from "../Components/FormJuegos";
+//import sonido from '../sounds/sonido.mp3';
+//import FormJuegos from "../Components/FormJuegos";
 function Games () {
     const navegacion = useNavigate();
 
@@ -27,7 +27,6 @@ function Games () {
         <h1> <Link to="/"> HOME </Link></h1>
         <img src={logo} width="100%" onClick={ manejarClickImagen } />
         <h1> Cargar Juegos </h1>
-        <FormJuegos />
         <h1> Lista de Juegos </h1>
         </>
     )
